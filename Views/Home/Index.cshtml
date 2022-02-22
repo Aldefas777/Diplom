@@ -8,11 +8,6 @@
 </div>
 
 <div>
-    <table class="table">
-        <tr><td>Id</td><td>Name</td><td>Surname</td><td>Second Name</td><td>Date Registration</td><td>Aboniment</td></tr>
-    @foreach(var item in @Model)
-    {
-         <tr><td>@item.Id</td><td>@item.Name</td><td>@item.Surname</td><td>@item.SecondName</td><td>@item.DateRegistration</td><td>@item.Aboniment</td><td><a href="/Home/Delete/@item.Id">Удалить</a></td></tr>
-    }
-    </table>
+    <a href="/Costumers/CostumersView">Просмотр пользователей</a>
+    <a href="/Costumers/Add">Добавить пользователя</a>
 </div>
