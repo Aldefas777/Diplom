@@ -1,13 +1,55 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<style>
+    body {
+        background: url(https://oir.mobi/uploads/posts/2021-03/1616533805_35-p-fon-sport-38.jpg)
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    .image2{
+        max-width: 350px;
+        flex: auto;
+        margin: 10px;
+        float: left;
+        padding-bottom: 80px;
+    }
+
+    .image2 p {
+        text-align: center;
+    }
+</style>
+<div class="text-center" padding = "80">
+    <h2 class="display-4">Добро пожаловать на сайт тренажёрного зала "Прокачка"</h2>
+    <h4>Узнайте <a href="/Home/FAQ">больше</a> о нас.</h4>
 </div>
 
-<div>
-    <a href="/Costumers/CostumersView">Просмотр пользователей</a>
-    <a href="/Costumers/Add">Добавить пользователя</a>
+<div padding = "80">
+    <p>
+    <img src="https://strommontazh.com/wp-content/uploads/2014/06/sportzal3.jpg" width="400" height="300" />
+    <img src="https://abs-steklo.ru/assets/images2/04.jpg" width="400" height="300" />
+    <img src="https://img.lovepik.com/photo/50110/3113.jpg_wh860.jpg" width="400" height="300" />
+    </p>
+</div>
+
+<div align="center" padding-bottom="80">
+    <h4>Кратко о нас</h4>
+    <a>Многофункциональный тренажерный зал с оборудованием от мирового лидера по производству фитнес-оборудования. В зале представлены бренды Life Fitness и Hammer Strength. Уникальная серия тренажеров Hammer Strength МТС позволяет воссоздать особенности биомеханики движений человека в тренажерах, что делает тренировки эффективными и безопасными.</a>
+</div>
+
+<div padding = "80">
+    <h4 margin = "0 0 0 10">Наши программы</h4>
+    <p align="center">
+    <div class = image2>
+        <img src="http://fizkult-nn.ru/upload/iblock/d73/d734227f31e4e385400004c56f69ebba.jpg" width="350" height="250" />
+        <p>Фитнес</p>
+    </div>
+    <div class = image2>
+        <img src="https://fitseven.ru/wp-content/uploads/crossfit-danger-nl.jpg" width="350" height="250" />
+        <p>Кросс-фит</p>
+    </div>
+    <div class = image2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Basingstoke_Sports_Centre_Pool.jpg/1200px-Basingstoke_Sports_Centre_Pool.jpg" width="350" height="250" />
+        <p>Бассейн</p>
+    </div>
+    </p>
 </div>
