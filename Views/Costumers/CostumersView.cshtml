@@ -8,6 +8,11 @@
 </div>
 
 <div>
+    <form method ="post">
+        <input name="search" type="text" size="100" />
+         <INPUT TYPE="SUBMIT" NAME="BN" VALUE ="Найти">
+    </form>
+
     <table class="table">
         <tr><td>Id</td><td>Name</td><td>Surname</td><td>Second Name</td><td>Date Registration</td><td>Aboniment</td></tr>
     @foreach(var item in @Model)

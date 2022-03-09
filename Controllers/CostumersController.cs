@@ -17,9 +17,9 @@ namespace Project.Controllers
             _costumerRepository = costumerRepository;
         }
 
-        public IActionResult CostumersView()
+        public IActionResult CostumersView(string search)
         {
-            var model = _costumerRepository.GetUsers();
+            var model = _costumerRepository.GetUsers(search);
             return View(model); ;
         }
 
