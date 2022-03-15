@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Project.Models;
 using Project.Interfaces;
 using Project.Classes;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Project.Controllers
 {
@@ -17,12 +19,14 @@ namespace Project.Controllers
             _costumerRepository = costumerRepository;
         }
 
+        [Authorize]
         public IActionResult CostumersView(string search)
         {
             var model = _costumerRepository.GetUsers(search);
             return View(model); ;
         }
 
+        [Authorize]
         public IActionResult Delete(int? id)
         {
             ViewBag.Id = id;
@@ -30,12 +34,14 @@ namespace Project.Controllers
             return View(model); ;
         }
 
+        [Authorize]
         public IActionResult Add(int Id, string names, string surname, string SecondName, string Aboniment)
         {
             _costumerRepository.AddUsers(Id, names, surname, SecondName, Aboniment);
             return View();
         }
 
+        [Authorize]
         public IActionResult Update(int? Id, string names, string surname, string SecondName, string Aboniment)
         {
             ViewBag.Id = Id;
